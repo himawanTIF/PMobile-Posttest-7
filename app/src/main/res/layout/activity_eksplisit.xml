@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EksplisitActivity">
+
+    <ImageView
+        android:id="@+id/coneimage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/cone_kerucut" />
+
+    <TextView
+        android:id="@+id/Kerucut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/coneimage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:padding="5dp"
+        android:text="Bangun Ruang Kerucut"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/jari_jari"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Kerucut"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/edittext_rounded"
+        android:hint="Masukkan Jari - jari"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:textColorHint="#fff" />
+
+    <EditText
+        android:id="@+id/tinggi"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/jari_jari"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/edittext_rounded"
+        android:hint="Masukkan tinggi"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:textColorHint="#fff" />
+
+    <EditText
+        android:id="@+id/selimut"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tinggi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittext_rounded"
+        android:hint="Masukkan Selimut"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:textColorHint="#fff" />
+
+    <Button
+        android:id="@+id/btn_htvolume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selimut"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#01024e"
+        android:padding="5dp"
+        android:text="Hitung Volume"
+        android:textColor="#f1fa3c" />
+
+    <Button
+        android:id="@+id/btn_htluas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_htvolume"
+        android:layout_alignBottom="@id/btn_htvolume"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_toRightOf="@id/btn_htvolume"
+        android:background="#f2e3c9"
+        android:padding="5dp"
+        android:text="Hitung Luas"
+        android:textColor="#293462" />
+
+    <TextView
+        android:id="@+id/volume_kerucut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_htvolume"
+        android:layout_margin="5dp"
+        android:text="Volume Kerucut : "
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/hasil_volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_htvolume"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/volume_kerucut"
+        android:background="#f7be16"
+        android:textColor="#293462" />
+
+    <TextView
+        android:id="@+id/luaspm_kerucut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/volume_kerucut"
+        android:layout_margin="5dp"
+        android:text="Luas Permukaan Kerucut : "
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/hasil_luaspm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hasil_volume"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@id/luaspm_kerucut"
+        android:background="#f7be16"
+        android:textColor="#293462" />
+
+
+</RelativeLayout>

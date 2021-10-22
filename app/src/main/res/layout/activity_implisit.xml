@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImplisitActivity">
+
+    <TextView
+        android:id="@+id/iniTelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="80dp"
+        android:text="Telephone"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/nomorTelp"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/iniTelp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:textColorHint="#fff"
+        android:background="@drawable/edittext_rounded"
+        android:hint="Masukkan Nomor Telephone"
+        android:inputType="number"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/btn_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iniTelp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@id/nomorTelp"
+        android:background="#55ae95"
+        android:padding="5dp"
+        android:text="Call"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/iniSMS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nomorTelp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="SMS"
+        android:textSize="15sp"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/nomorSMS"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/iniSMS"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="3dp"
+        android:textColorHint="#fff"
+        android:background="@drawable/edittext_rounded"
+        android:hint="Masukkan Nomor SMS"
+        android:inputType="number"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/isiSMS"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/nomorSMS"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="20dp"
+        android:textColorHint="#fff"
+        android:background="@drawable/edittext_rounded"
+        android:hint="Ketik Pesan disini..."
+        android:inputType="text"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/btn_SMS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iniSMS"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@id/isiSMS"
+        android:background="#10316b"
+        android:padding="5dp"
+        android:text="SEND"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/iniInstagram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/isiSMS"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Instagram"
+        android:textSize="15sp"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/cariIG"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/iniInstagram"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edittext_rounded"
+        android:hint="Cari di Instagram"
+        android:textColorHint="#fff"
+        android:inputType="text"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/btn_CariIG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iniInstagram"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@id/cariIG"
+        android:background="#f0134d"
+        android:padding="5dp"
+        android:text="Cari"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/iniMaps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/cariIG"
+        android:text="Maps"
+        android:textSize="15sp"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Maps"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/iniMaps"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edittext_rounded"
+        android:hint="Cari tempat / lokasi?"
+        android:textColorHint="#fff"
+        android:inputType="text"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/btn_cariMaps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iniMaps"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@id/Maps"
+        android:background="#ed5107"
+        android:text="CARI"
+        android:textColor="#fff" />
+
+</RelativeLayout>

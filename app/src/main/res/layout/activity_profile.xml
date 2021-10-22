@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/verifikasi_fix" />
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/foto"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:text="Nama : Himawan Imtikhan Azmi"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/nim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nama"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:text="NIM : 1700018032"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/slot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nim"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:text="Slot : Kamis, 13.30 - 15.00"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+</RelativeLayout>
